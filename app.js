@@ -42,6 +42,7 @@ app.post("/",function(req,res){
         }
         else{
             res.sendFile(__dirname+"/faliure.html");
+            console.log(response.statusCode);
         }
         // response.on("data",function(data){                              //extracting data from response
         //     console.log(JSON.parse(data));                              //converting hexadecimal to json
