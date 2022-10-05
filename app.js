@@ -54,10 +54,12 @@ app.post("/",function(req,res){
 
 app.post("/faliure",function(req,res){
     res.redirect("/");
-})
+});
 
-app.listen(process.env.PORT || 3000,function(){
-    console.log("Server is running on port 3000.");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT,function(){
+    console.log(`Server is running on port ${PORT}.`);
 });
 // Api key
 // d6f8e80b5c2f20bb7f055eb59a16fe90-us14
